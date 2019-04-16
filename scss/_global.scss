@@ -1,0 +1,39 @@
+body {
+  font-family: 'PragmaticaC', sans-serif;
+  background-size: cover;
+  color: $white;
+}
+.wrapper {
+  @include wrapper()
+}
+a {
+  text-decoration: none;
+}
+input[type=button], button {
+  cursor: pointer;
+  outline: none;
+}
+input[type=text] {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  &__aic {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  &__aic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.xs-hide {
+  @include xs(display, none)
+}

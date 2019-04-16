@@ -1,0 +1,49 @@
+#header {
+  background: url(../images/images/bg.jpg) #fff no-repeat center top;
+  padding-bottom: 240px;
+  background-size: cover;
+  @include xs-block() {
+    //background: url(../images/images/bg-mob.jpg) #fff no-repeat center top;
+    //background-size: 100% 100%;
+    background-position: 62% top;
+    padding-bottom: 175px;
+  }
+  .logo img {
+    @include sm-block() {
+      max-width: 80px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding-top: 115px;
+    max-width: 350px;
+    @include sm-block() {
+      align-items: center;
+      padding-top: 240px;
+    }
+    p {
+      text-align: right;
+      font-size: 26px;
+      @include sm(font-size, 19px);
+      &.red {
+        color: $red;
+        @include sm-block() {
+          color: $blue;
+          padding-right: 15px;
+        }
+      }
+      span {
+        font-size: 60px;
+        font-weight: 600;
+        @include sm(font-size, 30px);
+        &.more {
+          font-size: 80px;
+          @include sm(font-size, 46px);
+        }
+      }
+    }
+  }
+}
