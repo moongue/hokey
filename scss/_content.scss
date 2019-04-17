@@ -19,7 +19,7 @@
         text-align: right;
         font-size: 28px;
         color: $dark;
-        line-height: 30px;
+        line-height: 22px;
         text-transform: uppercase;
         @include sm-block() {
           font-size: 17px;
@@ -38,6 +38,7 @@
     margin-top: 50px;
     @include row-flex();
 
+    @include sm(padding, 0 15px);
     .one-example {
       @include col();
       @include size(4);
@@ -70,7 +71,8 @@
         .number {
           position: absolute;
           top: -40px;
-          left: calc((100% - 73px) / 2);
+          left: calc((100% - 55px) / 2);
+          max-width: 55px;
         }
       }
       .name {
