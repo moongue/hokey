@@ -1,12 +1,14 @@
 #content {
   //margin-top: -245px;
   position: relative;
+  top: -260px;
+  z-index: 99;
   @include sm(margin-top, -160px);
-  z-index:9;
   .prize {
     .cap {
       padding-right: 35px;
-      z-index:8;
+      z-index: 34;
+      padding-bottom: 35px;
       @include sm-block() {
         padding-right: 0;
         display: flex;

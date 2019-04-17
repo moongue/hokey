@@ -101,7 +101,7 @@ input[type=text] {
   background: url(../images/images/bg.jpg) #fff no-repeat center top;
   background-size: cover;
   position: relative;
-  height: 1260px;
+  height: 100vh;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
@@ -123,48 +123,22 @@ input[type=text] {
 
 #header:before {
   content: '';
-  position: absolute;
-  bottom: -80%;
-  height: 0;
-  right: -70px;
-  border-style: solid;
-  border-width: 0 100px 1900px 1900px;
-  padding-bottom: 0;
   width: 100%;
-  -webkit-transform: rotate(0deg) skewX(-82deg);
-  -ms-transform: rotate(0deg) skewX(-82deg);
-  transform: rotate(0deg) skewX(-82deg);
-  border-color: transparent transparent #fff transparent;
-  z-index: 5;
-}
-
-@media screen and (max-width: 780px) {
-  #header:before {
-    bottom: -188%;
-  }
+  background: url(../images/images/opas-trangle.png) no-repeat;
+  position: absolute;
+  background-size: cover;
+  height: 100%;
+  bottom: -40%;
 }
 
 #header:after {
   content: '';
-  position: absolute;
-  bottom: -60%;
-  height: 0;
-  right: -70px;
-  border-style: solid;
-  border-width: 0 100px 1900px 100px;
-  padding-bottom: 0;
   width: 100%;
-  -webkit-transform: rotate(0deg) skewX(-82deg);
-  -ms-transform: rotate(0deg) skewX(-82deg);
-  transform: rotate(0deg) skewX(-82deg);
-  border-color: transparent transparent rgba(255, 255, 255, 0.2) transparent;
-  z-index: 5;
-}
-
-@media screen and (max-width: 780px) {
-  #header:after {
-    bottom: -160%;
-  }
+  background: url(../images/images/rectangle-white.png) no-repeat;
+  position: absolute;
+  background-size: cover;
+  height: 100%;
+  bottom: 0;
 }
 
 @media screen and (max-width: 780px) {
@@ -183,7 +157,8 @@ input[type=text] {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 325px;
+  position: absolute;
+  bottom: 35%;
   max-width: 350px;
 }
 
@@ -204,7 +179,7 @@ input[type=text] {
 
 #header .information p {
   text-align: right;
-  font-size: 38px;
+  font-size: 28px;
 }
 
 @media screen and (max-width: 780px) {
@@ -225,7 +200,7 @@ input[type=text] {
 }
 
 #header .information p span {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 600;
 }
 
@@ -236,7 +211,7 @@ input[type=text] {
 }
 
 #header .information p span.more {
-  font-size: 90px;
+  font-size: 80px;
 }
 
 @media screen and (max-width: 780px) {
@@ -245,67 +220,10 @@ input[type=text] {
   }
 }
 
-#header .prize {
-  z-index: 9;
-  position: relative;
-  bottom: -140px;
-}
-
-#header .prize .cap {
-  padding-right: 35px;
-  z-index: 8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-@media screen and (max-width: 780px) {
-  #header .prize .cap {
-    padding-right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}
-
-#header .prize .cap .col {
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-}
-
-@media screen and (max-width: 780px) {
-  #header .prize .cap .col {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-#header .prize .cap p {
-  text-align: right;
-  font-size: 28px;
-  color: #173746;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 780px) {
-  #header .prize .cap p {
-    font-size: 17px;
-    text-align: center;
-  }
-}
-
 #content {
   position: relative;
-  z-index: 9;
+  top: -260px;
+  z-index: 99;
 }
 
 @media screen and (max-width: 780px) {
@@ -316,7 +234,8 @@ input[type=text] {
 
 #content .prize .cap {
   padding-right: 35px;
-  z-index: 8;
+  z-index: 34;
+  padding-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,9 +413,9 @@ input[type=text] {
 
 #footer {
   padding-top: 220px;
-  margin-top: 40px;
   padding-bottom: 35px;
   background: url(../images/images/bg-footer.jpg) #fff no-repeat center bottom;
+  background-size: 100% 100%;
 }
 
 @media screen and (max-width: 560px) {

@@ -2,7 +2,7 @@
   background: url(../images/images/bg.jpg) #fff no-repeat center top;
   background-size: cover;
   position: relative;
-  height: 1260px;
+  height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 10;
@@ -13,37 +13,23 @@
     background-position: 62% top;
     padding-bottom: 175px;
   }
-  &:before{
+  &:before {
     content: '';
+    width: 100%;
+    background: url(../images/images/opas-trangle.png) no-repeat;
     position: absolute;
-    bottom: -80%;
-    height: 0;
-    right: -70px;
-    border-style: solid;
-    border-width: 0 100px 1900px 1900px;
-    padding-bottom: 0; width: 100%;
-    transform: rotate(0deg) skewX(-82deg);
-    border-color: transparent transparent #fff transparent;
-    z-index: 5;
-    @include sm-block() {
-      bottom: -188%;
-    }
+    background-size: cover;
+    height: 100%;
+    bottom: -40%;
   }
   &:after {
     content: '';
+    width: 100%;
+    background: url(../images/images/rectangle-white.png) no-repeat;
     position: absolute;
-    bottom: -60%;
-    height: 0;
-    right: -70px;
-    border-style: solid;
-    border-width: 0 100px 1900px 100px;
-    padding-bottom:0; width: 100%;
-    transform: rotate(0deg) skewX(-82deg);
-    border-color: transparent transparent $white-20 transparent;
-    z-index: 5;
-    @include sm-block() {
-      bottom: -160%;
-    }
+    background-size: cover;
+    height: 100%;
+    bottom: 0;
   }
   .logo img {
     @include sm-block() {
@@ -55,7 +41,8 @@
   .information {
     display: flex;
     flex-direction: column;
-    padding-top: 325px;
+    position: absolute;
+    bottom: 35%;
     max-width: 350px;
     @include sm-block() {
       align-items: center;
@@ -64,7 +51,7 @@
     @include xs(padding-top, 180px);
     p {
       text-align: right;
-      font-size: 38px;
+      font-size: 28px;
       @include sm(font-size, 19px);
       &.red {
         color: $red;
@@ -74,45 +61,17 @@
         }
       }
       span {
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 600;
         @include sm(font-size, 30px);
         &.more {
-          font-size: 90px;
+          font-size: 80px;
           @include sm(font-size, 46px);
         }
       }
     }
   }
-  .prize {
-    z-index: 9;
-    position: relative;
-    bottom: -140px;
-    .cap {
-      padding-right: 35px;
-      z-index: 8;
-      @include sm-block() {
-        padding-right: 0;
-        display: flex;
-        justify-content: center;
-      }
-      .col {
-        align-items: flex-end;
-        @include sm(align-items, center);
-      }
-      display: flex;
-      justify-content: flex-end;
-      p {
-        text-align: right;
-        font-size: 28px;
-        color: $dark;
-        line-height: 22px;
-        text-transform: uppercase;
-        @include sm-block() {
-          font-size: 17px;
-          text-align: center;
-        }
-      }
-    }
-  }
+
+
+
 }
