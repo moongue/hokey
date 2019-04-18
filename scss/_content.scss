@@ -1,9 +1,8 @@
 #content {
-  //margin-top: -245px;
   position: relative;
   top: -260px;
   z-index: 99;
-  @include sm(margin-top, -160px);
+  @include sm(top, -150px);
   .prize {
     .cap {
       padding-right: 35px;
